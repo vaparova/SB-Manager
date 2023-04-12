@@ -1,1 +1,175 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+    background-color: #F1F0F2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tituloCabecera{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px !important;
+    font-weight: 500;
+    letter-spacing: 2px;    
+}
+
+.imagenFondo{
+    background-image: url("SBManagerOpacity.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+.panelGral{
+    position: relative;
+    float: left;
+    padding: 0px 5px;
+    margin-top: 80px;
+}
+
+.dashBoard{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.cardBoardRelative{
+    position: relative;
+    float: left;
+    min-width: 540px !important;
+    width: 50%;
+    min-height: 550px;
+}
+
+
+.carBoard{
+    position: fixed;
+    float: left;
+    width: 50%;
+    min-width: 520px;
+    padding-right: 5px;
+}
+
+
+.cardContenedorAuto{
+    position: sticky;
+    float: left;
+    min-width: 520px;
+    width: 95%;
+    height: auto;
+    color: black;
+    margin: 10px 5px 5px 10px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cardContenedorAuto::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#E8EAED;
+    border: 1px solid rgba(43, 48, 53, 1);
+    opacity: 0.88;
+    border-radius: 1%;
+}
+
+.cardDetalleAuto{
+    position: relative;
+    float: left;
+    
+}
+
+.accordion{
+    min-width: 480px !important;
+    width: 100% !important;
+}
+
+/* E S T I L O S   C A R D */
+
+.cardAuto{
+    position: relative;
+    float: left;
+    width: 265px;
+    color: black;
+    margin: 10px 5px 5px 5px;
+}
+
+.cardAuto::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#E8EAED;
+    border: 1px solid rgba(43, 48, 53, 1);
+    opacity: 0.88;
+    border-radius: 2%;
+}
+
+.cardAuto-head{
+    border-bottom: solid black;
+    font-weight: bolder;
+    font-size: 24px;
+    font-style: oblique;
+    /*letter-spacing: 1px;*/
+    margin: 15px 5px 0px 5px;
+}
+
+.cardAuto-body{
+    margin-top: 10px;
+    min-height: 100px;
+    margin: 0px 10px 0px 10px;
+    font-size: 10px;
+}
+
+.cardAuto-buttom{
+    position: relative;
+    float: left;
+    width: 255px;
+    background-color: #DCEDC1;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    border-top: solid black;
+    margin: 0px 5px 1px 5px;
+    padding: 5px 0px 5px 0px;
+}
+
+/* E S T I L O S   T I T U L O S   Y  E N C A B E Z A D O S */
+
+.tituloCardDetalle{
+    position: relative;
+    float: left;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.botonesCardDetalle{
+    position: relative;
+    float: right;
+}
+
+.pie{
+    height: 15px !important;
+}
+
+.texto-pie{
+    margin-top: -15px !important;
+    font-size: 10px !important;
+}
+/* 
+    Paleta de Colores
+
+    -Estado
+        - En Reparación: #FAD689
+        - Reparado p/entregar: #DCEDC1
+        - Entregado: #AECEFB
+*/
