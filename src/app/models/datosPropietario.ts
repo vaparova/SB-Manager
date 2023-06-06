@@ -1,15 +1,16 @@
 import { DatosContacto } from "./datosContacto";
 import { DatosPersona } from "./datosPersona";
+import { DatosAutos } from './datosAutos';
 
-export class InfoPropietario {
+export class datosPropietario {
   idPropietario: string;
   datosPersona: DatosPersona;
   datosContacto: DatosContacto;
-  arrAutos: string[];
+  arrAutos: DatosAutos[];
 
   constructor(datosPersona: DatosPersona,
               datosContacto: DatosContacto,
-              arrAutos: string[]){
+              arrAutos: DatosAutos[]){
                 this.idPropietario = this.crearIdPropietario(datosPersona);
                 this.datosPersona = datosPersona;
                 this.datosContacto = datosContacto;
